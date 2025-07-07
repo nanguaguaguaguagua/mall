@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        //手动编写Vue框架
+        function Vue(options){
+            //从options中获取数据
+            let id = options.el
+            let el = document.getElementById(id) //获取页面中的一个标签元素
+            let data = options.data
+            el.innerHTML = data//显示数据，把一段内容插入到元素中
+        }
+        //定义数据
+        let options = {
+            el:'app',
+            data: 'Hello VUE'
+        }
+        //创建Vue实例 调用Vue函数
+        new Vue(options)
+    </script>
+
+</body>
+</html>
