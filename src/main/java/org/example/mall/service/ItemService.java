@@ -13,4 +13,10 @@ public interface ItemService {
      * @return 商品列表
      */
     List<Item> selectByCategoryId(Integer categoryId);
+
+    /**
+     * 插入商品
+     * @param item
+     */
+    void insert(Item item);
 }

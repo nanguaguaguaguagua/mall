@@ -14,4 +14,5 @@ public interface CategoryService {
      */
     List<Category> selectAll();
     List<Category> selectByIdService(int id);
+
 }

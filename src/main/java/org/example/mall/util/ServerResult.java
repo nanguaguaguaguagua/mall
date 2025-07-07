@@ -27,7 +27,7 @@ public class ServerResult<T> {
         return success(null);
     }
     //错误信息
-    public static ServerResult<Void> success(Integer code, String msg) {
+    public static ServerResult<Void> error(Integer code, String msg) {
         ServerResult<Void> result = new ServerResult<Void>();
         result.setCode(code);
         result.setMsg(msg);
